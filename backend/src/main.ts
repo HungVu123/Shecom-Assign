@@ -11,5 +11,9 @@ async function bootstrap() {
   return server;
 }
 
-// Export the app to be used in Vercel's serverless functions
-export const handler = bootstrap();
+const serverPromise = bootstrap();
+
+export async function handler(req, res) {
+  const server = await serverPromise;
+  server(req, res);
+}
