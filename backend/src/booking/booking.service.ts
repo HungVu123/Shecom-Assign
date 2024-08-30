@@ -4,7 +4,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { Bookings } from '@prisma/client';
-import { BookingDto } from 'src/dto/booking.dto';
+import { BookingDto } from '../dto/booking.dto';
 import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()

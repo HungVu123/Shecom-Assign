@@ -8,7 +8,7 @@ import {
   Post,
 } from '@nestjs/common';
 import { BookingService } from './booking.service';
-import { BookingDto } from 'src/dto/booking.dto';
+import { BookingDto } from '../dto/booking.dto';
 
 @Controller('bookings')
 export class BookingController {
